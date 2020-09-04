@@ -21,10 +21,10 @@ Created for a similar purpose as it's author:
 ## Install
 ```sh
 git clone git@github.com:lnfnunes/cowsay-swift-cli.git
-cd cowsay-cli
+cd cowsay-swift-cli
 swift build -c release
-cp -f .build/release/CommandLineTool /usr/local/bin/commandlinetool
-# That’s it! Now the script can be run from anywhere!
+cp -f .build/release/cowsay /usr/local/bin/cowsay
+# That’s it! Now you can run "cowsay" from anywhere!
 ```
 
 ## Usage
