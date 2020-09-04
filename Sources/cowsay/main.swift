@@ -1,7 +1,5 @@
 //
-//  CowNames.swift
-//
-//
+//  main.swift
 //  Created by Leandro Nunes Fantinatto on 03/09/20.
 //
 
@@ -37,7 +35,7 @@ struct Cli: ParsableCommand {
     // MARK: - Init
 
     mutating func run() throws {
-        let cow = try Cowsay.createCow(named: name, withEyes: eyes, andTongue: tongue)
+        let cow = try Cowsay.create(named: name, withEyes: eyes, andTongue: tongue)
         print(cow.say(it: message.joined(separator: " ")))
     }
 }

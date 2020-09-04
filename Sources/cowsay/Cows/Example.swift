@@ -1,7 +1,5 @@
 //
-//  CowNames.swift
-//
-//
+//  Example.swift
 //  Created by Leandro Nunes Fantinatto on 03/09/20.
 //
 

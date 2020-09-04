@@ -1,7 +1,5 @@
 //
-//  CowNames.swift
-//
-//
+//  Cowsay.swift
 //  Created by Leandro Nunes Fantinatto on 03/09/20.
 //
 
@@ -10,7 +8,7 @@ import Foundation
 
 final class Cowsay {
 
-    static func createCow(
+    static func create(
         named: String,
         withEyes eyes: String,
         andTongue tongue: String
@@ -26,7 +24,7 @@ final class Cowsay {
         return cow
     }
 
-    static private func getCow(named: String) -> Cow? {
+    static func getCow(named: String) -> Cow? {
         CowNames.all.first { $0.name == named }
     }
 }
