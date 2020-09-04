@@ -11,15 +11,17 @@ struct Example: Cow {
 
     let name: String
 
-    let drawing = """
-     $paddingTop
-    < $thoughts >
-     $paddingBottom
-            \\   ^__^
-             \\  ($eyes\\________
-                (__)\\       )\\/\\
-                 $tongue ||----w |
-                    ||     ||
+    var eyes: String = ""
+    var tongue: String = ""
+    let image = """
+         $paddingTop
+        < $thoughts >
+         $paddingBottom
+                \\   ^__^
+                 \\  ($eyes\\________
+                    (__)\\       )\\/\\
+                     $tongue ||----w |
+                        ||     ||
 
-    """
+        """
 }

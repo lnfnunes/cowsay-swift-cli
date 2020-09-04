@@ -11,25 +11,10 @@ typealias CowName = String
 
 enum CowNames: CowName {
     case example
+    case cowffee
 
     static let all: [Cow] = [
-        Example(name: CowNames.example.rawValue)
+        Example(name: CowNames.example.rawValue),
+        Cowffee(name: CowNames.cowffee.rawValue)
     ]
-}
-
-extension Cowsay {
-
-    internal func getAllCows() -> [Cow] {
-        CowNames.all
-    }
-
-    internal func getCow(named: String) -> String? {
-        getAllCows().first { $0.name == named }?.drawing
-    }
-}
-
-protocol Cow {
-
-    var name: CowName { get }
-    var drawing: String { get }
 }
