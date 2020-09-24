@@ -22,19 +22,18 @@ Created for a similar purpose as it's author:
 ```sh
 git clone git@github.com:lnfnunes/cowsay-swift-cli.git
 cd cowsay-swift-cli
-swift build -c release
-cp -f .build/release/cowsay /usr/local/bin/cowsay
+make install
 # That’s it! Now you can run "cowsay" from anywhere!
 ```
 
 ## Usage
 ```sh
-swift run cowsay Swift rocks
+cowsay Swift rocks
 ```
 
 ## Options
 ```sh
-swift run cowsay -h
+cowsay -h
 
 USAGE: cowsay [<message> ...] [--eyes <eyes>] [--tongue <tongue>] [--name <name>]
 
