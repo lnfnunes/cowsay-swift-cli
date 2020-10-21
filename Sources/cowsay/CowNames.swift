@@ -10,10 +10,12 @@ typealias CowName = String
 enum CowNames: CowName {
     case example
     case cowffee, cowbees
+    case headin
 
     static let all: [Cow] = [
         Example(name: CowNames.example.rawValue),
         Cowffee(name: CowNames.cowffee.rawValue),
         Cowbees(name: CowNames.cowbees.rawValue),
+        Headin(name: CowNames.headin.rawValue)
     ]
 }
