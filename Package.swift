@@ -9,7 +9,7 @@ let package = Package(
     .executable(name: "cowsay", targets: ["cowsay"])
   ],
   dependencies: [
-    .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.1.0"))
+    .package(url: "https://github.com/apple/swift-argument-parser", from: "0.4.3")
   ],
   targets: [
     .target(name: "cowsay", dependencies: ["ArgumentParser"]),
