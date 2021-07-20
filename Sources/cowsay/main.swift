@@ -8,29 +8,26 @@ import Foundation
 
 struct Cli: ParsableCommand {
 
-    static let configuration = CommandConfiguration(abstract: "Cowsay muuhhhh")
+    static let configuration = CommandConfiguration(
+        abstract: "Cowsay muuhhhh",
+        version: "0.0.2"
+    )
 
     // MARK: - Arguments
 
     @Argument(help: "The cow should say something")
-    var message: [String]
+    var message: [String] = ["muuhhhh"]
 
     // MARK: - Options
 
-    @Option(name: .shortAndLong,
-    default: "oo",
-    help: "Change cow's eyes")
-    var eyes: String
+    @Option(name: .shortAndLong, help: "Change cow's eyes")
+    var eyes: String = "oo"
 
-    @Option(name: .shortAndLong,
-    default: "  ",
-    help: "Change cow's tongue")
-    var tongue: String
+    @Option(name: .shortAndLong, help: "Change cow's tongue")
+    var tongue: String = "  "
 
-    @Option(name: .long,
-    default: Example(name: CowNames.example.rawValue).name,
-    help: "Select, by name, one of cows included in the package")
-    var name: String
+    @Option(name: .long, help: "Select, by name, one of cows included in the package")
+    var name: String = Example(name: CowNames.example.rawValue).name
 
     // MARK: - Init
 
