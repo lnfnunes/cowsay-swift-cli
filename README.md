@@ -20,9 +20,8 @@ Created for a similar purpose as it's author:
 
 ## Install
 ```sh
-git clone git@github.com:lnfnunes/cowsay-swift-cli.git
-cd cowsay-swift-cli
-make install
+brew install mint
+mint install lnfnunes/cowsay-swift-cli
 # That’s it! Now you can run "cowsay" from anywhere!
 ```
 
@@ -45,6 +44,13 @@ OPTIONS:
   -t, --tongue <tongue>   Change cow's tongue (default:   )
   --name <name>           Select, by name, one of cows included in the package (default: example)
   -h, --help              Show help information.
+```
+
+## Developing
+```sh
+git clone git@github.com:lnfnunes/cowsay-swift-cli.git
+cd cowsay-swift-cli
+swift run cowsay
 ```
 
 ## Contributing
